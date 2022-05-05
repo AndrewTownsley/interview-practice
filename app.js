@@ -1,3 +1,89 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // If the value is a multiple of 3: use the value "Fizz" instead
 // If the value is a multiple of 5: use the value "Buzz" instead
 // If the value is a multiple of 3 & 5: use the value "FizzBuzz" instead
@@ -38,38 +124,38 @@
 
 // 2,7,9,14,15
 
-// ========================================================================
+// // ========================================================================
 
-"Create a function batches that returns the maximum number of whole batches that can be cooked from a recipe"
+// "Create a function batches that returns the maximum number of whole batches that can be cooked from a recipe"
 
 // "It accepts two objects as arguments: the first object is the recipe
 // for the food, while the second object is the available ingredients.
 // Each ingredient's value is a number representing how many units there are."
 
-"batches(recipe, available)"
+// "batches(recipe, available)"
 
-const required = {
-    milk: 100,
-    butter: 50, 
-    flour: 5 
-}
-const available = {
-    milk: 3320,
-    butter: 3000, 
-    flour: 810 
-}
+// const required = {
+//     milk: 100,
+//     butter: 50, 
+//     flour: 5 
+// }
+// const available = {
+//     milk: 3320,
+//     butter: 3000, 
+//     flour: 810 
+// }
 
 // const batches = (obj1, obj2) => {
 //     JSON.stringify(obj1) > JSON.stringify(obj2) ? console.log('true') : console.log('false');
 // }
 
-const batchQty = (obj1, obj2) => {
-   console.log( Math.floor(
-        Math.min(...Object.keys(obj1).map(k => obj2[k] / obj1[k] || 0))
-    ))
-}
+// const batchQty = (obj1, obj2) => {
+//    console.log( Math.floor(
+//         Math.min(...Object.keys(obj1).map(k => obj2[k] / obj1[k] || 0))
+//     ))
+// }
 
-batchQty(required, available)
+// batchQty(required, available)
 
 // const deepEqual = (obj1, obj2) => {
 //     const keys1 = Object.keys(obj1);
@@ -98,3 +184,13 @@ batchQty(required, available)
 // }
 
 // deepEqual(required, available)
+
+// ============================================================
+
+// Create a function that masks a string of characters with # except for the last four (4) characters.
+
+// const mask = (str, maskChar = '#') => {
+//      console.log(str.slice(-4).padStart(str.length, maskChar))
+// }
+
+// mask('123456789')
